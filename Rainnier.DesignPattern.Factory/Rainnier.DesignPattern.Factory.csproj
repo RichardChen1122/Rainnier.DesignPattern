@@ -44,10 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractFactory\ConcreteFactory.cs" />
     <Compile Include="AbstractFactory\AbstractFactory.cs" />
-    <Compile Include="AbstractFactory\ConcreteSkin.cs" />
     <Compile Include="AbstractFactory\AbstractSkin.cs" />
+    <Compile Include="AbstractFactory\ConcreteFactory.cs" />
+    <Compile Include="AbstractFactory\ConcreteSkin.cs" />
     <Compile Include="BarChart.cs" />
     <Compile Include="FactoryMethod\ChartFactory.cs" />
     <Compile Include="FactoryMethod\IFactory.cs" />
