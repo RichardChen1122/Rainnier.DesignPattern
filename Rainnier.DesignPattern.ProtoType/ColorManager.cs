@@ -8,7 +8,7 @@ namespace Rainnier.DesignPattern.ProtoType
 {
     public class ColorManager
     {
-        private Dictionary<string, Color> dic => new Dictionary<string, Color>();
+        private Dictionary<string, Color> dic = new Dictionary<string, Color>();
 
         public Color this[string colorName]
         {
