@@ -10,6 +10,8 @@ namespace Rainnier.DesignPattern.Singleton
     {
         static void Main(string[] args)
         {
+            var pro = Product.GetInstance();
+            Console.ReadKey();
         }
     }
 }
