@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavior", "Behavior", "{C1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.Interpreter", "Rainnier.DesignPattern.Interpreter\Rainnier.DesignPattern.Interpreter.csproj", "{3BA2B1B3-DAF2-44A7-9B5C-30D713FBF4E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.Adapter", "Rainnier.DesignPattern.Adapter\Rainnier.DesignPattern.Adapter.csproj", "{E05BAC56-EA2A-4883-A20E-9352AAA486AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{3BA2B1B3-DAF2-44A7-9B5C-30D713FBF4E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BA2B1B3-DAF2-44A7-9B5C-30D713FBF4E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BA2B1B3-DAF2-44A7-9B5C-30D713FBF4E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E05BAC56-EA2A-4883-A20E-9352AAA486AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05BAC56-EA2A-4883-A20E-9352AAA486AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05BAC56-EA2A-4883-A20E-9352AAA486AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05BAC56-EA2A-4883-A20E-9352AAA486AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{56B9D42A-EEFE-4062-91D3-8859299978A1} = {0D83D479-119C-4570-BDDA-976AD311EE8E}
 		{C6BB091A-97D0-4FBC-A119-347D0E91315A} = {0D83D479-119C-4570-BDDA-976AD311EE8E}
 		{3BA2B1B3-DAF2-44A7-9B5C-30D713FBF4E0} = {C1DF5F59-1AEA-4F42-8621-6C1CECB8F9EE}
+		{E05BAC56-EA2A-4883-A20E-9352AAA486AB} = {0EB59C3D-20CE-4496-9590-BE13383F7D00}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6FEB26E-E15B-45B2-A3DA-33902D264A19}
