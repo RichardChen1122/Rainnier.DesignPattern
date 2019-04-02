@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Rainnier.DesignPattern.Adapter.Adaptee
 {
-    public class DatabaseOperation
+    public class DatabaseOperation :  IDatabaseOperationA
     {
         public void ReadDatabase()
         {

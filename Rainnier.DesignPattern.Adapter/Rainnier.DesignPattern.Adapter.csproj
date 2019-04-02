@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adaptee\DatabaseOperation.cs" />
+    <Compile Include="Adaptee\IDatabaseOperationA.cs" />
+    <Compile Include="Adaptee\IOperateDatabaseB.cs" />
     <Compile Include="Adaptee\OperateDatabase.cs" />
     <Compile Include="Adapter\DatabaseAdapter.cs" />
     <Compile Include="Adapter\IDatabaseAdapter.cs" />

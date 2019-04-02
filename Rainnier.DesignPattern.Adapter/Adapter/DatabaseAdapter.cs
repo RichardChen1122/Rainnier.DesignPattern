@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rainnier.DesignPattern.Adapter.Adaptee;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,25 +7,19 @@ using System.Threading.Tasks;
 
 namespace Rainnier.DesignPattern.Adapter.Adapter
 {
-    public class DatabaseAdapter : IDatabaseAdapter
+    public class DatabaseAdapter : IOperateDatabaseB
     {
-        public DatabaseAdapter()
+        private IDatabaseOperationA databasea;
+        public DatabaseAdapter(IDatabaseOperationA a)
         {
+            databasea = a;
         }
 
-        public string Get()
-        {
-            throw new NotImplementedException();
-        }
+        public string DatabaseGet() => databasea.GetDatabase();
 
-        public void Read()
-        {
-            throw new NotImplementedException();
-        }
+        public void DatabaseRead() => databasea.ReadDatabase();
 
-        public void Write()
-        {
-            throw new NotImplementedException();
-        }
+        public void DatabaseWrite() => databasea.WriteDatabase();
+        
     }
 }
