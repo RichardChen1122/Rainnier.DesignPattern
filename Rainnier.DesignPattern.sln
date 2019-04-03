@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.Adap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.Bridge", "Rainnier.DesignPattern.Bridge\Rainnier.DesignPattern.Bridge.csproj", "{577AB4E8-AF1E-4BE3-94AD-D38764DF4043}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.Composite", "Rainnier.DesignPattern.Composite\Rainnier.DesignPattern.Composite.csproj", "{493737D5-3D67-437D-9A0B-7361C69BDCC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.Decorator", "Rainnier.DesignPattern.Decorator\Rainnier.DesignPattern.Decorator.csproj", "{E41D6786-4A1D-4884-BF2B-0263FE45FE4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{577AB4E8-AF1E-4BE3-94AD-D38764DF4043}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{577AB4E8-AF1E-4BE3-94AD-D38764DF4043}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{577AB4E8-AF1E-4BE3-94AD-D38764DF4043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{493737D5-3D67-437D-9A0B-7361C69BDCC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{493737D5-3D67-437D-9A0B-7361C69BDCC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{493737D5-3D67-437D-9A0B-7361C69BDCC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{493737D5-3D67-437D-9A0B-7361C69BDCC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E41D6786-4A1D-4884-BF2B-0263FE45FE4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41D6786-4A1D-4884-BF2B-0263FE45FE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41D6786-4A1D-4884-BF2B-0263FE45FE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41D6786-4A1D-4884-BF2B-0263FE45FE4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +81,8 @@ Global
 		{3BA2B1B3-DAF2-44A7-9B5C-30D713FBF4E0} = {C1DF5F59-1AEA-4F42-8621-6C1CECB8F9EE}
 		{E05BAC56-EA2A-4883-A20E-9352AAA486AB} = {0EB59C3D-20CE-4496-9590-BE13383F7D00}
 		{577AB4E8-AF1E-4BE3-94AD-D38764DF4043} = {0EB59C3D-20CE-4496-9590-BE13383F7D00}
+		{493737D5-3D67-437D-9A0B-7361C69BDCC7} = {0EB59C3D-20CE-4496-9590-BE13383F7D00}
+		{E41D6786-4A1D-4884-BF2B-0263FE45FE4A} = {0EB59C3D-20CE-4496-9590-BE13383F7D00}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6FEB26E-E15B-45B2-A3DA-33902D264A19}
