@@ -12,6 +12,8 @@ namespace Rainnier.DesignPattern.Adapter
     //test git commit in master branch
     //test git commit in hotfix branch
 
+    //Add some feature in richard branch
+
     //Do some hotfix
     class Program
     {
