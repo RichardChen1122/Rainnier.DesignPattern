@@ -11,6 +11,8 @@ namespace Rainnier.DesignPattern.Adapter
     //Test git commit in local richard branch
     //test git commit in master branch
     //test git commit in hotfix branch
+
+    //Do some hotfix
     class Program
     {
         static void Main(string[] args)
