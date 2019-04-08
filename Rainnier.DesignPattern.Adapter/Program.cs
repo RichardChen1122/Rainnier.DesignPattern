@@ -8,6 +8,7 @@ using Rainnier.DesignPattern.Adapter.Adapter;
 
 namespace Rainnier.DesignPattern.Adapter
 {
+    //Test git commit in local richard branch
     class Program
     {
         static void Main(string[] args)
