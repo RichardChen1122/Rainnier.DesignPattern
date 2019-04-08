@@ -9,6 +9,8 @@ using Rainnier.DesignPattern.Adapter.Adapter;
 namespace Rainnier.DesignPattern.Adapter
 {
     //Test git commit in local richard branch
+    //test git commit in master branch
+    //test git commit in hotfix branch
     class Program
     {
         static void Main(string[] args)
