@@ -41,6 +41,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AOP", "AOP", "{56B8966E-AA3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.AOP.Interception", "Rainnier.DesignPattern.AOP.Interception\Rainnier.DesignPattern.AOP.Interception.csproj", "{A3A6DE8C-F6F0-4170-8728-DB642B2F1149}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.AttributeDemo", "Rainnier.DesignPattern.AttributeDemo\Rainnier.DesignPattern.AttributeDemo.csproj", "{03987416-C252-4724-BD5B-006041AF9940}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,10 @@ Global
 		{A3A6DE8C-F6F0-4170-8728-DB642B2F1149}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3A6DE8C-F6F0-4170-8728-DB642B2F1149}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3A6DE8C-F6F0-4170-8728-DB642B2F1149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03987416-C252-4724-BD5B-006041AF9940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03987416-C252-4724-BD5B-006041AF9940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03987416-C252-4724-BD5B-006041AF9940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03987416-C252-4724-BD5B-006041AF9940}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -127,6 +133,7 @@ Global
 		{290E5F75-ADB0-4B10-893B-D2E3A68FD638} = {C1DF5F59-1AEA-4F42-8621-6C1CECB8F9EE}
 		{E532998B-B266-4BAB-B972-89ADD689A97A} = {C1DF5F59-1AEA-4F42-8621-6C1CECB8F9EE}
 		{A3A6DE8C-F6F0-4170-8728-DB642B2F1149} = {56B8966E-AA31-4E0B-8FD7-124947C270C4}
+		{03987416-C252-4724-BD5B-006041AF9940} = {56B8966E-AA31-4E0B-8FD7-124947C270C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6FEB26E-E15B-45B2-A3DA-33902D264A19}
