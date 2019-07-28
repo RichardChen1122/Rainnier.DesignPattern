@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AtomicOperation\UsefulCode.cs" />
     <Compile Include="Concurrent\ConcurrentStack.cs" />
     <Compile Include="Concurrent\Node.cs" />
     <Compile Include="Program.cs" />

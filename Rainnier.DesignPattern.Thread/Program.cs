@@ -21,7 +21,7 @@ namespace Rainnier.DesignPattern.ThreadSync
             node2.Next = node3;
             var stack = new ConcurrentStack(node1);
 
-            
+
 
             var node4 = new Node<int>(4);
             var node5 = new Node<int>(5);
@@ -90,8 +90,9 @@ namespace Rainnier.DesignPattern.ThreadSync
             SpinWait spin = new SpinWait();
             while (current > 0)
             {
-                Thread.Sleep(10);
-                if (Interlocked.CompareExchange(ref ticketCount, ticketCount-1, current) != current)
+                //强制执行上下文切换
+                Thread.Sleep(1);
+                if (Interlocked.CompareExchange(ref ticketCount, ticketCount - 1, current) != current)
                 {
                     spin.SpinOnce();
                     current = ticketCount;
@@ -103,7 +104,7 @@ namespace Rainnier.DesignPattern.ThreadSync
                 }
 
             }
-        
+
             //以下是最开始有问题的方法，在作判断是否大于0时，会出现非预期的结果
             //if (ticketCount > 0)
             //{
