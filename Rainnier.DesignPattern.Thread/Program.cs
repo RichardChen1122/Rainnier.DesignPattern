@@ -85,11 +85,12 @@ namespace Rainnier.DesignPattern.ThreadSync
             //-- 要更新的变量V 预期原值E 和 新值N
             //Interlocked.CompareExchange(ref E,N,V)
             //如果E 和V不相等，什么都不做
-            //如果E 和V相等，则用N 替换 E 的值，不管比较结果 return 的都是E的原值
+            //如果E 和V相等，则用N 替换 E 的值，不管比较结果 return 的都是E的原值,注意 E 是按址传递的。
             var current = ticketCount;
             SpinWait spin = new SpinWait();
             while (current > 0)
             {
+                Thread.Sleep(10);
                 if (Interlocked.CompareExchange(ref ticketCount, ticketCount-1, current) != current)
                 {
                     spin.SpinOnce();
