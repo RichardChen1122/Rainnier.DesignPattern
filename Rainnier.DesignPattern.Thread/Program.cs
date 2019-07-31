@@ -8,6 +8,7 @@ using Rainnier.DesignPattern.ThreadSync.Concurrent;
 
 namespace Rainnier.DesignPattern.ThreadSync
 {
+    //Add Some in Junbo branch
     //Add some comments to test
     class Program
     {
