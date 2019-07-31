@@ -8,6 +8,7 @@ using Rainnier.DesignPattern.ThreadSync.Concurrent;
 
 namespace Rainnier.DesignPattern.ThreadSync
 {
+    //Add some comments to test
     class Program
     {
         static volatile int ticketCount = 5;
