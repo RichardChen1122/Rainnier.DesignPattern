@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,6 +35,11 @@ namespace Rainnier.DesignPattern.ObserveMode.Rx
         }
 
         public void OnNext(Order value)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnNext(ConcurrentQueue<Order> queue)
         {
             throw new NotImplementedException();
         }

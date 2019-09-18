@@ -11,6 +11,7 @@ namespace Rainnier.DesignPattern.ObserveMode.Rx
     {
         ConcurrentQueue<Order> queue = new ConcurrentQueue<Order>();
         List<IObserver<Order>> observers = new List<IObserver<Order>>();
+        Dictionary<IObserver<Order>, Action<Order>> oderHandlerDic = new Dictionary<IObserver<Order>, Action<Order>>();
         public IDisposable Subscribe(IObserver<Order> observer)
         {
             if (!observers.Contains(observer))
@@ -19,6 +20,15 @@ namespace Rainnier.DesignPattern.ObserveMode.Rx
             }
 
             return new unsubscribe(observer, observers);
+        }
+
+        public IDisposable Subscribe(IObserver<Order> observer, Action<Order> orderHandler)
+        {
+            IDisposable unsub = Subscribe(observer);
+
+            oderHandlerDic[observer] = orderHandler;
+
+            return unsub;
         }
 
         private class unsubscribe : IDisposable
@@ -37,6 +47,20 @@ namespace Rainnier.DesignPattern.ObserveMode.Rx
                     this._observers.Remove(this._observer);
                 }
             }
+        }
+
+        private void Notify(Order order)
+        {
+            foreach (var item in this.observers)
+            {
+                item.OnNext(order);
+            }
+        }
+        //当有新的文章发布时通知订阅者
+        public void AddOrder(Order order)
+        {
+            this.queue.Enqueue(order);
+            this.Notify(order);
         }
     }
 }
