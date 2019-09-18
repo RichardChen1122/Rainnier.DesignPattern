@@ -232,3 +232,8 @@
 /Rainnier.DesignPattern.Thread
 /Rainnier.DesignPattern.AttributeDemo/Rainnier.DesignPattern.AttributeDemo.csproj.user
 /Rainnier.DesignPattern.AttributeDemo
+/packages
+/Rainnier.DesignPattern.ObserveMode/bin/Debug
+/Rainnier.DesignPattern.ObserveMode/obj/Debug
+/Rainnier.DesignPattern.Rx.Demo/bin/Debug
+/Rainnier.DesignPattern.Rx.Demo/obj/Debug
