@@ -25,6 +25,7 @@ namespace Rainnier.DesignPattern.ObserveMode.Rx
         public IDisposable Subscribe(IObserver<Order> observer, Action<Order> orderHandler)
         {
             IDisposable unsub = Subscribe(observer);
+            observers.Add(observer);
 
             oderHandlerDic[observer] = orderHandler;
 
@@ -54,6 +55,7 @@ namespace Rainnier.DesignPattern.ObserveMode.Rx
             foreach (var item in this.observers)
             {
                 item.OnNext(order);
+                oderHandlerDic[item](order) ;
             }
         }
         //当有新的文章发布时通知订阅者
