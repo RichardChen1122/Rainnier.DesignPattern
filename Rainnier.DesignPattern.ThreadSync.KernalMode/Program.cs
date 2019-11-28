@@ -9,16 +9,19 @@ namespace Rainnier.DesignPattern.ThreadSync.KernalMode
 {
     class Program
     {
-        // 初始化自动重置事件，并把状态设置为终止状态
-        public static AutoResetEvent autoEvent = new AutoResetEvent(true);
+        // 初始化自动重置事件，并把状态设置为非终止状态
+        public static AutoResetEvent autoEvent = new AutoResetEvent(false);
 
-        //public static ManualResetEvent autoEvent = new ManualResetEvent(true);
+        //public static ManualResetEvent autoEvent = new ManualResetEvent(false);
         static void Main(string[] args)
         {
             Console.WriteLine("Main Thread Start run at: " + DateTime.Now.ToLongTimeString());
             Thread t = new Thread(TestMethod);
             t.Start();
-            Thread.Sleep(5000);
+            Thread.Sleep(3000);
+            autoEvent.Set();
+            Thread.Sleep(3000);
+            autoEvent.Set();
             Console.Read();
         }
 

@@ -17,6 +17,7 @@ namespace Rainnier.DesignPattern.ThreadSync.KernalMode
 
         public void Enter()
         {
+            //调用一次waitOne 会自动将IsRelease 设置成false， 就会阻塞当前线程
             m_available.WaitOne();
         }
 
