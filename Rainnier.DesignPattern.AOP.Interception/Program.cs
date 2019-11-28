@@ -26,6 +26,7 @@ namespace Rainnier.DesignPattern.AOP.Interception
     public class Calc: ContextBoundObject
     {
         [AOPMethod]
+        [HandleMethod]
         public int add(int a, int b)
         {
             return a + b;

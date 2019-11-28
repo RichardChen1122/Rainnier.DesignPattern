@@ -11,6 +11,15 @@ namespace Rainnier.DesignPattern.Asynchronous
     {
         static void Main(string[] args)
         {
+            var dedicatedThread = new Thread(ComputeBountOp);
+            dedicatedThread.Start(5);
+
+            Console.WriteLine("Main thread: doing other work here...");
+            Thread.Sleep(10000);
+
+            dedicatedThread.Join();
+            Console.WriteLine("Hit <enter> to exit...");
+            Console.ReadLine();
             //List<TestEntity> test = new List<TestEntity>();
             //List<Task> tasks = new List<Task>();
             //test.Add(new TestEntity() { dbName = "db1", time = 11 });
@@ -39,20 +48,26 @@ namespace Rainnier.DesignPattern.Asynchronous
                 });
                 thread.Start();
                 
-                int t = 1;
+                int t = 10;
                 while (t > 0)
                 {
                     Thread.Sleep(1000);
                     Console.WriteLine("doing something else");
                     t--;
                 }
-                finishEvent.Wait();
+                finishEvent.Wait(10000);
                 Console.WriteLine(tempResult.Count);
             }
 
             Console.ReadKey();
 
 
+        }
+
+        private static void ComputeBountOp(Object state)
+        {
+            Console.WriteLine("In ComputeBountOp:{0}", state);
+            Thread.Sleep(2000);
         }
     }
 

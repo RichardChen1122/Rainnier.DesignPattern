@@ -237,3 +237,6 @@
 /Rainnier.DesignPattern.ObserveMode/obj/Debug
 /Rainnier.DesignPattern.Rx.Demo/bin/Debug
 /Rainnier.DesignPattern.Rx.Demo/obj/Debug
+/.vs/Rainnier.DesignPattern/DesignTimeBuild
+/Rainnier.DesignPattern.ThreadSync.KernalMode/bin/Debug
+/Rainnier.DesignPattern.ThreadSync.KernalMode/obj/Debug
