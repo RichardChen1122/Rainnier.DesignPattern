@@ -47,6 +47,7 @@
     <Compile Include="AtomicOperation\UsefulCode.cs" />
     <Compile Include="Concurrent\ConcurrentStack.cs" />
     <Compile Include="Concurrent\Node.cs" />
+    <Compile Include="DoubleCheckLock.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
