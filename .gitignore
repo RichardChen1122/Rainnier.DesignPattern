@@ -240,3 +240,5 @@
 /.vs/Rainnier.DesignPattern/DesignTimeBuild
 /Rainnier.DesignPattern.ThreadSync.KernalMode/bin/Debug
 /Rainnier.DesignPattern.ThreadSync.KernalMode/obj/Debug
+/Rainnier.DesignPattern.ThreadSync.Hybrid/bin/Debug
+/Rainnier.DesignPattern.ThreadSync.Hybrid/obj/Debug

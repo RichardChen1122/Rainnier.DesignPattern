@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.Obse
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.ThreadSync.KernalMode", "Rainnier.DesignPattern.ThreadSync.KernalMode\Rainnier.DesignPattern.ThreadSync.KernalMode.csproj", "{A0D8AE24-A1B7-4487-AADB-8ED78C532245}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.ThreadSync.Hybrid", "Rainnier.DesignPattern.ThreadSync.Hybrid\Rainnier.DesignPattern.ThreadSync.Hybrid.csproj", "{EF662C99-0724-4F9B-B83D-A4111DA4B47A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -155,6 +157,10 @@ Global
 		{A0D8AE24-A1B7-4487-AADB-8ED78C532245}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0D8AE24-A1B7-4487-AADB-8ED78C532245}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0D8AE24-A1B7-4487-AADB-8ED78C532245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF662C99-0724-4F9B-B83D-A4111DA4B47A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF662C99-0724-4F9B-B83D-A4111DA4B47A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF662C99-0724-4F9B-B83D-A4111DA4B47A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF662C99-0724-4F9B-B83D-A4111DA4B47A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -182,6 +188,7 @@ Global
 		{EDE83E87-0C74-47E9-91F0-52AC6E9F08BC} = {7EAEC179-C4FF-413B-9EB4-4F08CD4EF11A}
 		{FA523901-C8B4-488F-984E-61EBB15F4926} = {C1DF5F59-1AEA-4F42-8621-6C1CECB8F9EE}
 		{A0D8AE24-A1B7-4487-AADB-8ED78C532245} = {0B7C57C0-5F61-4623-A57C-4F6B2693D969}
+		{EF662C99-0724-4F9B-B83D-A4111DA4B47A} = {0B7C57C0-5F61-4623-A57C-4F6B2693D969}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6FEB26E-E15B-45B2-A3DA-33902D264A19}
