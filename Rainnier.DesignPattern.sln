@@ -47,7 +47,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Network", "Network", "{7DD0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.Network", "Rainnier.DesignPattern.Network\Rainnier.DesignPattern.Network.csproj", "{F0E3A297-F3C3-4D5A-A791-E4C3D1FC1F67}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Thread", "Thread", "{0B7C57C0-5F61-4623-A57C-4F6B2693D969}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MutilThread", "MutilThread", "{0B7C57C0-5F61-4623-A57C-4F6B2693D969}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.ThreadSync", "Rainnier.DesignPattern.Thread\Rainnier.DesignPattern.ThreadSync.csproj", "{E4F0214B-AE07-4AE0-88A2-538BF02F8DC3}"
 EndProject
