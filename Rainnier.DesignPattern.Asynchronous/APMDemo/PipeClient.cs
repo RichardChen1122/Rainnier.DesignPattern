@@ -36,7 +36,7 @@ namespace Rainnier.DesignPattern.Asynchronous.APMDemo
 
             var data = (byte[])ar.AsyncState;
 
-            Console.WriteLine("Server Response:" + Encoding.UTF8.GetString(data, 0, bytesRead);
+            Console.WriteLine("Server Response:" + Encoding.UTF8.GetString(data, 0, bytesRead));
                  
         }
     }
