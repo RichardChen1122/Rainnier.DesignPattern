@@ -25,7 +25,7 @@ namespace Rainnier.DesignPattern.ThreadSync.KernalMode
             {
                 if (!runOne)
                 {
-                    Console.WriteLine("同一目录已经运行了一个程序实例,无法重复运行");
+                    Console.WriteLine("Can't run, already have one running");
                     Console.ReadLine();
                     return;  //增加return语句，防止用户回车后继续运行程序；
                 }

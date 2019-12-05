@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Rainnier.DesignPattern.ThreadSync.LazyDemo</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,7 +50,7 @@
     <Compile Include="AtomicOperation\UsefulCode.cs" />
     <Compile Include="Concurrent\ConcurrentStack.cs" />
     <Compile Include="Concurrent\Node.cs" />
-    <Compile Include="DoubleCheckLock.cs" />
+    <Compile Include="LazyDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Rainnier.DesignPattern.ThreadSync.KernalMode.MonitorDemo</StartupObject>
+    <StartupObject>Rainnier.DesignPattern.ThreadSync.KernalMode.MRESDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MonitorDemo.cs" />
+    <Compile Include="MRESDemo.cs" />
     <Compile Include="MutexDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
