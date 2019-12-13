@@ -14,6 +14,8 @@ namespace Rainnier.DesignPattern.Asynchronous.APMDemo
 
         public PipeServer()
         {
+            //所有的BeginXX方法都返回一个实现了IAsyncResult接口的对象
+            //调用结束时 一个线程池线程会调用回调方法，传入返回的IAsyncResult对象
             m_pipe.BeginWaitForConnection(ClientConnected, null);
         }
 

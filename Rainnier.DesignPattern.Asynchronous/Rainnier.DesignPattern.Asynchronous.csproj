@@ -50,6 +50,7 @@
     <Compile Include="APMDemo\PipeServer.cs" />
     <Compile Include="APMDemo\ServerStart.cs" />
     <Compile Include="APMDemo\PipeClient.cs" />
+    <Compile Include="IOCancellation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestClass.cs" />
