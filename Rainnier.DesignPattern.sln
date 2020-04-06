@@ -63,6 +63,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.Thre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.ThreadSync.Hybrid", "Rainnier.DesignPattern.ThreadSync.Hybrid\Rainnier.DesignPattern.ThreadSync.Hybrid.csproj", "{EF662C99-0724-4F9B-B83D-A4111DA4B47A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.ClassicPattern", "Rainnier.DesignPattern.ClassicPattern\Rainnier.DesignPattern.ClassicPattern.csproj", "{BA240421-2892-468A-A0BC-7D7FCEE2A570}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "system", "system", "{A706DF1E-E412-463E-A04C-433F331C13FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainnier.DesignPattern.System", "Rainnier.DesignPattern.System\Rainnier.DesignPattern.System.csproj", "{4DD74EE5-4946-4A9F-9041-6B30CCFDEC18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -161,6 +167,14 @@ Global
 		{EF662C99-0724-4F9B-B83D-A4111DA4B47A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF662C99-0724-4F9B-B83D-A4111DA4B47A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF662C99-0724-4F9B-B83D-A4111DA4B47A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA240421-2892-468A-A0BC-7D7FCEE2A570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA240421-2892-468A-A0BC-7D7FCEE2A570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA240421-2892-468A-A0BC-7D7FCEE2A570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA240421-2892-468A-A0BC-7D7FCEE2A570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DD74EE5-4946-4A9F-9041-6B30CCFDEC18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD74EE5-4946-4A9F-9041-6B30CCFDEC18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD74EE5-4946-4A9F-9041-6B30CCFDEC18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD74EE5-4946-4A9F-9041-6B30CCFDEC18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -189,6 +203,8 @@ Global
 		{FA523901-C8B4-488F-984E-61EBB15F4926} = {C1DF5F59-1AEA-4F42-8621-6C1CECB8F9EE}
 		{A0D8AE24-A1B7-4487-AADB-8ED78C532245} = {0B7C57C0-5F61-4623-A57C-4F6B2693D969}
 		{EF662C99-0724-4F9B-B83D-A4111DA4B47A} = {0B7C57C0-5F61-4623-A57C-4F6B2693D969}
+		{BA240421-2892-468A-A0BC-7D7FCEE2A570} = {0B7C57C0-5F61-4623-A57C-4F6B2693D969}
+		{4DD74EE5-4946-4A9F-9041-6B30CCFDEC18} = {A706DF1E-E412-463E-A04C-433F331C13FB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6FEB26E-E15B-45B2-A3DA-33902D264A19}

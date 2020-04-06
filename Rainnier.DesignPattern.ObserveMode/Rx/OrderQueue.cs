@@ -58,7 +58,9 @@ namespace Rainnier.DesignPattern.ObserveMode.Rx
                 oderHandlerDic[item](order) ;
             }
         }
-        //当有新的文章发布时通知订阅者
+        
+
+        //进来新订单，加入队列并通知订阅者
         public void AddOrder(Order order)
         {
             this.queue.Enqueue(order);

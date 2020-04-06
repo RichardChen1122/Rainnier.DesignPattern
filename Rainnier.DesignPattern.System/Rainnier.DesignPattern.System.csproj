@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A0D8AE24-A1B7-4487-AADB-8ED78C532245}</ProjectGuid>
+    <ProjectGuid>{4DD74EE5-4946-4A9F-9041-6B30CCFDEC18}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Rainnier.DesignPattern.ThreadSync.KernalMode</RootNamespace>
-    <AssemblyName>Rainnier.DesignPattern.ThreadSync.KernalMode</AssemblyName>
+    <RootNamespace>Rainnier.DesignPattern.System</RootNamespace>
+    <AssemblyName>Rainnier.DesignPattern.System</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>Rainnier.DesignPattern.ThreadSync.KernalMode.SemaphoreDemo</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,16 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MonitorDemo.cs" />
-    <Compile Include="MRESDemo.cs" />
-    <Compile Include="MutexDemo.cs" />
+    <Compile Include="LastRecentUse.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SemaphoreDemo.cs" />
-    <Compile Include="SimpleWaitLock.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LastRecentUse\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

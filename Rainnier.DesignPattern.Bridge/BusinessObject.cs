@@ -8,6 +8,10 @@ namespace Rainnier.DesignPattern.Bridge
 {
     public class BusinessObject
     {
+        class My
+        {
+
+        }
         private DataAccess dataAccess;
         private string city;
         public DataAccess DataAccess
@@ -19,6 +23,8 @@ namespace Rainnier.DesignPattern.Bridge
         public BusinessObject(string city)
         {
             this.city = city;
+            var a = new Test();
+            a.Testa();
         }
 
         public virtual void Add(string name)
@@ -59,6 +65,14 @@ namespace Rainnier.DesignPattern.Bridge
             Console.WriteLine("------------------------");
             base.ShowAll();
             Console.WriteLine("------------------------");
+        }
+    }
+
+    public struct Test
+    {
+        public void Testa()
+        {
+
         }
     }
 }

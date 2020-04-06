@@ -39,10 +39,6 @@ namespace Rainnier.DesignPattern.ObserveMode.Rx
             throw new NotImplementedException();
         }
 
-        public void OnNext(ConcurrentQueue<Order> queue)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
  

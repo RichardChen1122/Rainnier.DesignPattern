@@ -9,7 +9,12 @@ namespace Rainnier.DesignPattern.ThreadSync.KernalMode
 {
     public class SemaphoreDemo
     {
+        //信号量的值被设置成正数，则它等于发出semWait 操作后可继续执行的线程的数量（立即执行）。若值为0， 那么发出semWait
+        //操作的下一个线程会被阻塞，此时该信号量的值变为负值。之后，每个后续的semWait
+        //操作会使信号量的负值跟打，该负值等于正在等待解除阻塞的线程的数量
+        //在信号量为负值的情况下，每个semSignal操作都会将等待进程中的一个线程解除阻塞
         static Semaphore sema = new Semaphore(2,2);
+        //static SemaphoreSlim sema = new SemaphoreSlim(2,2);
 
         static void Main(string[] args)
         {

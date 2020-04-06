@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A0D8AE24-A1B7-4487-AADB-8ED78C532245}</ProjectGuid>
+    <ProjectGuid>{BA240421-2892-468A-A0BC-7D7FCEE2A570}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Rainnier.DesignPattern.ThreadSync.KernalMode</RootNamespace>
-    <AssemblyName>Rainnier.DesignPattern.ThreadSync.KernalMode</AssemblyName>
+    <RootNamespace>Rainnier.DesignPattern.ClassicPattern</RootNamespace>
+    <AssemblyName>Rainnier.DesignPattern.ClassicPattern</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Rainnier.DesignPattern.ThreadSync.KernalMode.SemaphoreDemo</StartupObject>
+    <StartupObject>Rainnier.DesignPattern.ClassicPattern.ReaderWriter.ReadWriteJinzheng</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,13 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MonitorDemo.cs" />
-    <Compile Include="MRESDemo.cs" />
-    <Compile Include="MutexDemo.cs" />
+    <Compile Include="ProducerComsumer\ItemModel.cs" />
+    <Compile Include="ProducerComsumer\StartUp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SemaphoreDemo.cs" />
-    <Compile Include="SimpleWaitLock.cs" />
+    <Compile Include="ReaderWriter\ReadFirst.cs" />
+    <Compile Include="ReaderWriter\ReadWriteJinzheng.cs" />
+    <Compile Include="ReaderWriter\WriteFirst.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
