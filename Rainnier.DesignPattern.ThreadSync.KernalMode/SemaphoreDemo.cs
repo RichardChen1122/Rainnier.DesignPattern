@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Rainnier.DesignPattern.ThreadSync.KernalMode.SemaphoreDisposable;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -15,15 +17,31 @@ namespace Rainnier.DesignPattern.ThreadSync.KernalMode
         //在信号量为负值的情况下，每个semSignal操作都会将等待进程中的一个线程解除阻塞
         static Semaphore sema = new Semaphore(2,2);
         //static SemaphoreSlim sema = new SemaphoreSlim(2,2);
-
+        static SemaphoreSlim semaf = new SemaphoreSlim(5);
+        static HttpClient client = new HttpClient();
         static void Main(string[] args)
         {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 10; i++)
             {
-                var thread = new Thread(Test) { Name = $"Thread{ i }" };
-                thread.Start();
+                var thread = new Thread(TestDispose) { Name = $"Thread{ i }" };
+                thread.Start(i);
             }
             Console.ReadKey();
+        }
+
+        static async void TestDispose(object par)
+        {
+            Console.WriteLine("entering Test Dispose");
+
+            
+            using (var obj = await semaf.UseWaitAsync())
+            {
+                Console.WriteLine($"Curent is {par}");
+                await client.GetAsync("http://www.sina.com");
+
+            }
+
+            Console.WriteLine("leaving Test Dispose");
         }
 
 
